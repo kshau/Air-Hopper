@@ -83,11 +83,11 @@ function main() {
     playerY += playerYv;
   
     if (keysDown.rightArrow) {
-      playerXv += 1.5;
+      playerXv += 1;
     }
   
     if (keysDown.leftArrow) {
-      playerXv -= 1.5;
+      playerXv -= 1;
     }
   
     platforms.forEach(p => {
