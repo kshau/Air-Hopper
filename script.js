@@ -194,8 +194,6 @@ function main() {
       drawScore();
       
     }
-  
-    window.requestAnimationFrame(loop);
     
   }
   
@@ -234,7 +232,10 @@ function main() {
   }
   
   setup();
-  loop();
+
+  setInterval( () => {
+    loop();
+  }, 15)
   
 }
 
